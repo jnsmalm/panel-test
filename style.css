@@ -1,0 +1,155 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+select,
+input {
+  background-color: #4E4E4E;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  border-radius: 3px;
+  color: #C7C7C7;
+  border: 1px solid #6C6C6E;
+}
+
+.drop-down {
+  width: 50%;
+}
+
+.panel {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  width: 250px;
+  background-color: #2B2C2E;
+  border-radius: 3px;
+  /* transform: scale(1.5); */
+}
+
+.panel .content {
+  padding: 5px 8px 5px 8px;
+}
+
+.spacing>div:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.panel .title {
+  background-color: #3C343F;
+  padding: 5px;
+  color: #AAA8AB;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.panel .label {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: smaller;
+  color: #C6C6C6;
+  margin-bottom: 2px;
+}
+
+.checkbox {
+  color: #C7C7C7;
+}
+
+.panel .list {
+  background-color: #4E4E4E;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  border-radius: 3px;
+  color: #C7C7C7;
+  padding: 2px;
+  border: 1px solid #6C6C6E
+}
+
+.panel .list div {
+  padding: 2px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+.panel .list>div:not(:last-child) {
+  border-bottom: 1px solid #6C6C6E;
+}
+
+.panel .text-input {
+  background-color: khaki;
+}
+
+.panel .text-input input {
+  width: 100%;
+}
+
+.panel .steering-wheel {
+  width: 100%;
+  background-color: #333;
+  transition: all ease-out 0.1s;
+  border-radius: 3px;
+  border: 1px solid #6C6C6E
+}
+
+.panel .steering-wheel canvas {
+  width: 100%;
+}
+
+.panel .steering-wheel div {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 8px;
+  padding: 2px;
+  color: #6C6C6E;
+}
+
+/* .panel .steering-wheel canvas:hover {
+  transform: scale(1.15);
+} */
+
+.panel .steering-wheel.scaled {
+  transform: scale(1.35);
+}
+
+.panel .slider {
+  width: 100%;
+  background-color: #333;
+  transition: all ease-out 0.1s;
+  border-radius: 3px;
+  border: 1px solid #6C6C6E
+}
+
+.panel .slider canvas {
+  width: 100%;
+}
+
+.panel .slider div {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 8px;
+  padding: 2px;
+  color: #6C6C6E;
+}
+
+/* .panel .slider canvas:hover {
+  transform: scale(1.15);
+} */
+
+.panel .slider.scaled {
+  transform: scale(1.35);
+}
+
+.columns-2 {
+  display: flex;
+  /* column-count: 2;
+  column-gap: 5px; */
+}
+
+.columns-2 div:first-child {
+  margin-right: 5px;
+}
+
+.columns-2 div {
+  width: 100%;
+}
