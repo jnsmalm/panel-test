@@ -13,6 +13,7 @@ input {
   border-radius: 3px;
   color: #C7C7C7;
   border: 1px solid #6C6C6E;
+  padding: 2px;
 }
 
 .drop-down {
@@ -28,7 +29,8 @@ input {
   width: 250px;
   background-color: #2B2C2E;
   border-radius: 3px;
-  /* transform: scale(1.5); */
+  transform-origin: top right;
+  transform: scale(1.5);
 }
 
 .panel .content {
@@ -78,9 +80,6 @@ input {
   border-bottom: 1px solid #6C6C6E;
 }
 
-.panel .text-input {
-  background-color: khaki;
-}
 
 .panel .text-input input {
   width: 100%;

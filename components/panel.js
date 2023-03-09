@@ -10,8 +10,8 @@ const e = React.createElement
 
 export function Panel(props) {
   const [grabbedPosition, setGrabbedPosition] = React.useState()
-  const [position, setPosition] = React.useState({ x: window.innerWidth - 270, y: 10 })
-  const [object, setObject] = React.useState({ x: 0, y: 0, z: 0, angle: 0 })
+  const [position, setPosition] = React.useState({ x: window.innerWidth - 270, y: 20 })
+  const [object, setObject] = React.useState({ x: 0, y: 0, z: 0, rotationX: 0, rotationY: 0 })
 
   React.useEffect(() => {
     const mouseUp = () => {
@@ -51,19 +51,24 @@ export function Panel(props) {
           // e(CheckboxList),
           e('div', { className: 'columns-2' },
             e(SteeringWheel, {
-              text: 'Angle',
+              text: 'Rot X',
               width: 600,
               height: 635,
               onChanged: (value) => {
-                let obj = { ...object, angle: value }
+                let obj = { ...object, rotationX: value }
                 setObject(obj)
                 props.onChanged(obj)
               }
             }),
             e(SteeringWheel, {
-              text: 'Skew',
+              text: 'Rot Y',
               width: 600,
-              height: 635
+              height: 635,
+              onChanged: (value) => {
+                let obj = { ...object, rotationY: value }
+                setObject(obj)
+                props.onChanged(obj)
+              }
             })
           )
         ),

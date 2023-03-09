@@ -15,6 +15,6 @@ const root = ReactDOM.createRoot(document.getElementById('app'));
 root.render(React.createElement(Panel, {
   onChanged: (object) => {
     mesh.position.set(object.x, object.y, object.z)
-    mesh.rotationQuaternion.setEulerAngles(0, object.angle, 0)
+    mesh.rotationQuaternion.setEulerAngles(object.rotationX, object.rotationY, 0)
   }
 }, null));
